@@ -11,9 +11,8 @@ export default function HomePage() {
       <section className="hero section home-hero">
         <div className="main-container hero-grid">
           <div className="hero-copy">
-            <span className="eyebrow">editoriálna tlačovina</span>
-            <h1>Luxusné papierové zážitky pre vaše svadobné detaily</h1>
-            <p className="subtitle">eDesign spája sofistikovanú umeleckú réžiu s nadčasovými súpravami pozvánok, menoviek, menu a starostlivo vybranými doplnkami pre hostinu.</p>
+            <h1>Malé projekty s veľkým významom</h1>
+            <p className="panel-description">Máte predstavu o svojich svadobných tlačovinách? Poďme ju spolu premeniť na skutočnosť.</p>
             <div className="hero-buttons">
               <Link href="/products" className="button button-primary">
                 Preskúmajte kolekcie
@@ -26,17 +25,14 @@ export default function HomePage() {
 
           <div className="hero-panel">
             <div className="hero-panel-inner">
-              <span className="panel-label">Kolekcia</span>
-              <h2>Editoriálne detaily, vybrané materiály</h2>
-              <p className="panel-description">Jemné textúry, mäkké farebné príbehy a umelecké rozloženie, ktoré pôsobí editoriálne, no zároveň osobne.</p>
               <div className="hero-feature-grid">
                 <div className="feature-card">
-                  <h3>Súpravy pozvánok</h3>
-                  <p>Pamätateľná tlačovina s elegantným kombinovaním papierov a jemnou typografiou.</p>
+                  <h3>Tlačoviny na mieru</h3>
+                  <p>Každý dizajn je pripravovaný presne podľa vašich predstáv.</p>
                 </div>
                 <div className="feature-card">
-                  <h3>Detaily svadby</h3>
-                  <p>Menu, čísla stolov, plán sedenia a foto rekvizity navrhnuté ako jednotná kolekcia.</p>
+                  <h3>Kvalitné papiere</h3>
+                  <p>Starostlivo vyberané papiere, ktoré dodávajú vašim tlačovinám jedinečný charakter.</p>
                 </div>
               </div>
             </div>

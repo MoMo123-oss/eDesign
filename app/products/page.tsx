@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import SiteHeader from '../../components/SiteHeader';
 import Footer from '../../components/Footer';
-import { products } from '../../lib/products';
+import { products, resolveProductImageSrc } from '../../lib/products';
 
 export default function ProductsPage() {
   const [activeSlides, setActiveSlides] = useState<number[]>(() => products.map(() => 0));
@@ -40,9 +40,9 @@ export default function ProductsPage() {
         <div className="main-container">
           <div className="section-headline">
             <span className="eyebrow">produkty</span>
-            <h1>Objavte každý editoriálny papierový detail</h1>
-            <p className="subtitle">Prepracovaná kolekcia pozvánok, stolových doplnkov a fotograficky hodnotných doplnkov prezentovaných ako editoriálne rozloženia.</p>
+            <h1>Objavte každý detail</h1>
           </div>
+        <p className="subtitle">Svadobné tlačoviny dotvárajú prvý dojem z vášho veľkého dňa a prepájajú všetky jeho časti do jedného krásneho celku. Od oznámení až po menovky, každý detail nesie váš príbeh a štýl.</p>
         </div>
       </section>
 
@@ -54,9 +54,9 @@ export default function ProductsPage() {
               className={`product-hero ${i % 2 === 1 ? 'reverse fade-left' : 'fade-right'} bg-${(i % 5) + 1}`}>
               <div className="product-hero-inner">
                 <div className="product-text center-text">
-                  <span className="eyebrow">{product.title}</span>
+                  
                   <h2>{product.title}</h2>
-                  <p className="subtitle">{product.short}</p>
+                  
                   <p className="product-description">{product.description}</p>
                   <div className="product-actions">
                     <Link href={`/products/${product.slug}`} className="button button-primary">Zobraziť detaily</Link>
@@ -65,10 +65,14 @@ export default function ProductsPage() {
 
                 <div className="product-photo-panel">
                   <div className="photo-frame">
-                    <div className="frame-copy">
-                      <span>Rám fotografie</span>
-                      <small>snímka {activeSlides[i] + 1} z {product.images.length}</small>
-                    </div>
+                    {product.images[activeSlides[i]] ? (
+                      <img
+                        className="frame-image"
+                        src={resolveProductImageSrc(product.images[activeSlides[i]])}
+                        alt={product.title}
+                      />
+                    ) : null}
+                    
                     <button
                       type="button"
                       className="frame-arrow left"

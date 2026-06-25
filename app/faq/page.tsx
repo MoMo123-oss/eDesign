@@ -3,20 +3,44 @@ import Footer from '../../components/Footer';
 
 const faqItems = [
   {
-    question: 'Môžem objednať viac položiek naraz?',
-    answer: 'Áno. Vyberte si pozvánky, kartičky menu, menovky a ďalšie ako koordinovanú súpravu.',
+    question: 'Ako si objednať?',
+    answer: 'Kontaktujte ma. Najrýchlejšiu odpoveď dostanete prostredníctvom soc. sietí alebo mailom. Viac info v položke Kontakt.',
   },
   {
-    question: 'Ako dlho trvá korektúra?',
-    answer: 'Korektúry sú zvyčajne zaslané do 1–2 pracovných dní od vašej žiadosti.',
+    question: 'Ako je dodacia doba?',
+    answer: 'Všetky tlačoviny sa snažím pripraviť čo najskôr podľa mojich aktuálnych možností! Dodacia doba je cca 7-10 pracovných dní. Ak máme dohodnutú prípravu doplnkových dizajnov, dodacia doba sa líši aj od termínu svadby, uprednostňujem svadby so skorším termínom. Ak nejaké tlačoviny potrebujete do istého termínu, no nebude to odkomunikované vopred, neručím za doručenie včas',
   },
   {
-    question: 'Môžem upraviť farby?',
-    answer: 'Paletu je možné prispôsobiť pri zachovaní minimalistického a elegantného vzhľadu.',
+    question: 'Ako dlho trvá príprava dizajnu?',
+    answer: 'Zväčša vám do 24hod. pošlem 2-3 návrhy na výber, v inom prípade vás budem kontaktovať. ',
   },
   {
-    question: 'Poskytujete odporúčania na tlač?',
-    answer: 'Áno. eDesign zahŕňa odporúčania na papier a tlač pre najlepší výsledok.',
+    question: 'Mám záujem o menovky, v akom formáte odoslať zoznam mien? ',
+    answer: 'Zoznam mien odosielajte v ELEKTRONICKEJ podobe: pdf, word, excel. Neakceptované formy sú: foto/screenshot dokumentu, fotka ručne písaných mien... Aby som vaše tlačoviny mohla pripraviť čo najskôr, je potrebné ich dodať vo vyššie uvedenom formáte.',
+  },
+  {
+    question: 'Bude výsledná tlač presne zodpovedať schválenému grafickému návrhu?',
+    answer: 'V závislosti od použitých farieb a motívov sa môžu vo výslednej tlači objaviť jemné farebné odchýlky, čo je bežné pri grafickom spracovaní. Tieto rozdiely sú prirodzené a netreba sa ich obávať. Farebné zobrazenie na obrazovkách počítača či telefónu sa totiž môže líšiť od reálnej tlače, preto nie je možné zaručiť 100 % zhodu farieb.',
+  },
+  {
+    question: 'Na čo si dať pozor?',
+    answer: 'Pred tlačou si dôkladne skontrolujte všetky texty a údaje v grafickom návrhu. Za chyby, ktoré boli v schválenom návrhu, nenesiem zodpovednosť.',
+  },
+  {
+    question: 'Aké rozmery majú tlačoviny?',
+    answer: 'Každá tlačovina má svoj špecifický rozmer (alebo dohodnutý rozmer), napr. pre oznámenia u mňa je to 10x15cm (pre bezokrajovú tlač) a 10,5x14,8cm (klasická tlač), keďže všetky tlačoviny prejdú niekoľko krát mojimi rukami, platí to aj pre samotné orezávanie, to môže sposobiť minimálne odchýlky v rozmeroch.',
+  },
+  {
+    question: 'Aký je minimálny odber svadobných oznámení?',
+    answer: 'Minimálnu odber ks nemám. Veľmi rada vám pripravím akýkoľvek počet ks tlačovín.',
+  },
+  {
+    question: 'Ponúkate aj obálky?',
+    answer: 'Áno, v ponuke sú rôzne farby. ',
+  },
+  {
+    question: 'Máte v ponuke aj vzorkovník papierov?',
+    answer: 'Priamo v ponuke vzorkovník nenájdete. Foto papierov odosielam vždy vopred, no ak máte problém vybrať si, určite sa dohodneme aj na zaslaní vzorkovníka aktuálnej ponuky.',
   },
 ];
 
@@ -29,7 +53,7 @@ export default function FAQPage() {
           <div className="section-headline">
             <span className="eyebrow">FAQ</span>
             <h1>Najčastejšie kladené otázky</h1>
-            <p className="subtitle">Všetko, čo potrebujete vedieť pred objednaním svadobnej tlačoviny.</p>
+            <p className="subtitle">Všetko, čo potrebujete vedieť pred objednaním svadobných tlačovín.</p>
           </div>
         </div>
       </section>

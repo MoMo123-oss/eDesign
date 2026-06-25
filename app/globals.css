@@ -87,10 +87,6 @@ button {
   margin: 0 auto;
 }
 
-.section {
-  padding: 5rem 0;
-}
-
 .section:last-child {
   padding-bottom: 6rem;
 }
@@ -110,13 +106,12 @@ button {
 
 .subtitle {
   margin: 1rem 0 0;
-  color: var(--muted);
+  color: black;
   font-size: 1.05rem;
 }
 
 .grid-3 {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
 }
 

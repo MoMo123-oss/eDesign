@@ -120,6 +120,19 @@ export const products: Product[] = [
       '/rekvizity/o (3).jpeg',
     ],
   },
+  {
+    slug: 'paper-types',
+    title: 'Typy papiera',
+    short: 'Rôzne druhy papiera pre vaše tlačoviny.',
+    description: 'Vyberte si z rôznych typov papiera, ktoré dodajú vašim svadobným tlačovinám jedinečný vzhľad a pocit. \nV ponuke sú hladké, štrukúrované, vizitkové a iné.',
+    features: ['Vysoká kvalita', 'Rôzne textúry', 'Ekologické možnosti'],
+    heroImage: 'https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=1200&q=80',
+    images: [
+      '/rekvizity/o (1).jpeg',
+      '/rekvizity/o (2).jpeg',
+      '/rekvizity/o (3).jpeg',
+    ],
+  },
 ];
 
 export const getProduct = (slug: string) => products.find((product) => product.slug === slug);

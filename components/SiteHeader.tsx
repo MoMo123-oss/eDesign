@@ -12,7 +12,7 @@ const leftLinks = [
 const rightLinks = [
   { label: 'FAQ', href: '/faq' },
   { label: 'Kontakt', href: '/contact' },
-  { label: 'O nás', href: '/about' },
+  { label: 'O mne', href: '/about' },
 ];
 
 export default function SiteHeader() {

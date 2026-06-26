@@ -434,7 +434,7 @@ button {
 
 .card h3,
 .card p {
-  margin: 0;
+  margin: 0 ;
 }
 
 .card + .card {
@@ -753,6 +753,114 @@ button {
   color: black;
 }
 
+.reviews-section {
+  padding-top: 1rem;
+}
+
+.reviews-headline {
+  display: grid;
+  gap: 1rem;
+}
+
+.reviews-headline h2 {
+  max-width: 760px;
+}
+
+.reviews-composition {
+  
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1.25rem;
+  align-items: stretch;
+}
+
+.review-card {
+  display: flex;
+  margin: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  padding: 1.6rem;
+  border-radius: 28px;
+  border: 1px solid rgba(122, 136, 100, 0.16);
+  background: linear-gradient(180deg, rgba(249, 249, 255, 0.92), rgba(255, 255, 255, 0.72));
+  box-shadow: 0 24px 70px rgba(122, 136, 100, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.review-card::after {
+  content: '';
+  position: absolute;
+  inset: auto -18% -35% auto;
+  width: 180px;
+
+  border-radius: 50%;
+  background: rgba(169, 189, 209, 0.14);
+}
+
+.review-card-soft {
+  grid-column: span 4;
+}
+
+.review-card-tall {
+  grid-column: span 3;
+  
+  background: linear-gradient(180deg, rgba(234, 227, 217, 0.95), rgba(249, 249, 255, 0.82));
+}
+
+.review-card-accent {
+  grid-column: span 5;
+  background: linear-gradient(135deg, rgba(169, 189, 209, 0.22), rgba(249, 249, 255, 0.92));
+}
+
+.review-card-wide {
+  grid-column: span 6;
+  
+}
+
+.review-card-topline,
+.review-author {
+  position: relative;
+  z-index: 1;
+}
+
+.review-card-topline {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+.review-index {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 2rem;
+  line-height: 1;
+  color: #7a8864;
+}
+
+.review-detail {
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: black;
+  text-align: right;
+}
+
+.review-quote {
+  position: relative;
+  z-index: 1;
+  margin: 1.4rem 0 1.6rem;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: black;
+}
+
+.review-author {
+  margin: 0;
+  font-weight: 700;
+  color: #5f6d4e;
+}
+
 .products-preview {
   padding-top: 4rem;
 }
@@ -908,14 +1016,14 @@ button {
   display: block;
 }
 
-.pricing-grid-large {
+.pricing-grid-large { 
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
 }
 
 .price-detail {
-  margin-top: 1rem;
+  margin-top: 2rem;
   font-weight: 700;
   color: var(--accent-dark);
 }
@@ -933,7 +1041,7 @@ button {
 
 .contact-note {
   margin-top: 1.5rem;
-  color: var(--muted);
+  color: black;
 }
 
 .back-link {
@@ -967,20 +1075,14 @@ button {
   min-height: 260px;
 }
 
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 2rem;
-  padding: 3rem 0 1rem;
-}
-
 .approach-card h3 {
   margin-top: 0;
 }
 
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  justify-items: center;
   gap: 2rem;
   padding: 3rem 0 1rem;
 }
@@ -996,6 +1098,18 @@ button {
   .approach-grid,
   .footer-grid {
     grid-template-columns: 1fr;
+  }
+
+  .reviews-composition {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .review-card-soft,
+  .review-card-tall,
+  .review-card-accent,
+  .review-card-wide {
+    grid-column: span 1;
+    
   }
 }
 
@@ -1067,6 +1181,10 @@ button {
 
   .hero-copy h1 {
     font-size: clamp(2.5rem, 10vw, 3.6rem);
+  }
+
+  .reviews-composition {
+    grid-template-columns: 1fr;
   }
 }
 

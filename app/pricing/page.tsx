@@ -9,28 +9,53 @@ export default function PricingPage() {
         <div className="main-container">
           <div className="section-headline">
             <span className="eyebrow">cenník</span>
-            <h1>Transparentné ceny pre zákazkové papierové súpravy</h1>
-            <p className="subtitle">Jednoduché ceny začínajú jasnou základnou sadzbou, aby plánovanie tlačovín bolo ľahké.</p>
-          </div>
+            <h1>Prehľad cien</h1>
+            </div>
+          <p className="subtitle">Tento cenník je orientačný, ceny sa líšia od druhu papiera, rozmerov a použitej techniky (embossovanie, debossovanie, metalická tlač, špeciálne tvary). Pre konkrétnu cenovú ponuku ma kontaktujte.</p>
         </div>
       </section>
 
       <section className="section">
         <div className="main-container pricing-grid-large">
           <div className="card pricing-card">
-            <h3>Súprava pozvánok</h3>
-            <p>Pozvánky, RSVP kartičky, obálky na odpovede a jeden zhodný návrh obálky.</p>
-            <p className="price-detail">Od 260 $</p>
+            <h3>Svadobné oznámenia</h3>
+            <p>Rozmery: 100x150mm / 105x148mm</p>
+            <p className="price-detail" style={{ marginTop: '0.5rem' }}>Od 0,45€ / ks</p>
           </div>
           <div className="card pricing-card">
-            <h3>Súprava stolovej tlačoviny</h3>
-            <p>Menu, menovky, čísla stolov a plán sedenia navrhnuté tak, aby spolu ladili.</p>
-            <p className="price-detail">Od 420 $</p>
+            <h3>Pozvanie k stolu</h3>
+            <p>Rozmery: 91x55mm</p>
+            <p className="price-detail" style={{ marginTop: '0.5rem' }}>Od 0,30€ / ks</p>
           </div>
           <div className="card pricing-card">
-            <h3>Kompletná eventová súprava</h3>
-            <p>Pozvánky, všetka stolová tlačovina, foto rekvizity a individuálna podpora pri korektúrach.</p>
-            <p className="price-detail">Od 650 $</p>
+            <h3>Kartičkové menovky</h3>
+            <p>Rozmery: 91x55mm</p>
+            <p className="price-detail" style={{ marginTop: '0.5rem' }}>Od 0,30€ / ks</p>
+          </div>
+          <div className="card pricing-card">
+            <h3>Strieškové menovky</h3>
+            <p>Rozmery: 90x100mm</p>
+            <p className="price-detail" style={{ marginTop: '0.5rem' }}>Od 0,40€ / ks</p>
+          </div>
+          <div className="card pricing-card">
+            <h3>Menovky na stuhy</h3>
+            <p>Dĺžka stuhy: 60cm</p>
+            <p className="price-detail" style={{ marginTop: '0.5rem' }}>Od 0,90€ / ks</p>
+          </div>
+          <div className="card pricing-card">
+            <h3>Omaľovánky</h3>
+            <p>Rozmery: A5, obojstranná tlač</p>
+            <p className="price-detail" style={{ marginTop: '0.5rem' }}>Od 2,00€ / ks</p>
+          </div>
+          <div className="card pricing-card">
+            <h3>Rekvizity</h3>
+            <p>Balenie 20ks</p>
+            <p className="price-detail" style={{ marginTop: '0.5rem' }}>Od 10,00€ / ks</p>
+          </div>
+          <div className="card pricing-card">
+            <h3>Doplnkové tlačoviny</h3>
+            <p>Menu karty, zasadací poriadok a iné.</p>
+            <p className="price-detail" style={{ marginTop: '0.5rem' }}>Individuálna cena</p>
           </div>
         </div>
       </section>

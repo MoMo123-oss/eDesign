@@ -4,25 +4,20 @@ export default function Footer() {
       <div className="main-container footer-grid">
         <div>
           <p className="brand-footer">eDesign</p>
-          <p>Moderná svadobná tlačovina pre pozvánky, menovky, kartičky menu a starostlivo vybrané detaily.</p>
+          <p>Svadobné tlačoviny s citom pre detail.</p>
         </div>
 
         <div>
           <h4>Social</h4>
-          <p>Instagram @edesign</p>
-          <p>Pinterest @edesign</p>
+          <p><b>Facebook:</b> <a href="https://www.facebook.com/share/17pPVDfXTY/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Erika Dizajn</a></p>
+          <p><b>Instagram:</b> <a href="https://www.instagram.com/edesign.sk?igsh=MWFvNWN4bGp5bXgwNw%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">@edesign.sk</a></p>
         </div>
 
         <div>
           <h4>Biznis</h4>
-          <p>Podpora pre zákazkové projekty</p>
-          <p>Rýchle korektúry a malé náklady</p>
-        </div>
-
-        <div>
-          <h4>Kontakt</h4>
-          <p>hello@edesign.com</p>
-          <p>+1 (555) 012-3456</p>
+          <p><b>IČO:</b> 57669414</p>
+          <p><b>DIČ:</b> 1131221278</p>
+          <p>Nie je platcom DPH</p>
         </div>
       </div>
     </footer>

@@ -124,7 +124,7 @@ export const products: Product[] = [
     slug: 'paper-types',
     title: 'Typy papiera',
     short: 'Rôzne druhy papiera pre vaše tlačoviny.',
-    description: 'Vyberte si z rôznych typov papiera, ktoré dodajú vašim svadobným tlačovinám jedinečný vzhľad a pocit. \nV ponuke sú hladké, štrukúrované, vizitkové a iné.',
+    description: 'Vyberte si z rôznych typov papiera, ktoré dodajú vašim svadobným tlačovinám jedinečný vzhľad a pocit. \nV ponuke sú hladké, štruktúrované, vizitkové a iné.',
     features: ['Vysoká kvalita', 'Rôzne textúry', 'Ekologické možnosti'],
     heroImage: 'https://images.unsplash.com/photo-1521412644187-c49fa049e84d?auto=format&fit=crop&w=1200&q=80',
     images: [

@@ -8,7 +8,7 @@ export default function AboutPage() {
       <section className="section hero section-sm">
         <div className="main-container">
           <div className="section-headline">
-            <span className="eyebrow">o nás</span>
+            <span className="eyebrow">o mne</span>
             <h1>Elegantná tlačovina s tichým editoriálnym nádychom</h1>
             <p className="subtitle">eDesign vytvára prepracovanú svadobnú tlačovinu, ktorá pôsobí osobne, premyslene a krásne.</p>
           </div>

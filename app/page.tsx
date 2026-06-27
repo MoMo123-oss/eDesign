@@ -50,8 +50,8 @@ export default function HomePage() {
       <section className="hero section home-hero">
         <div className="main-container hero-grid">
           <div className="hero-copy">
-            <h1>Malé projekty s veľkým významom</h1>
-            <p className="panel-description">Máte predstavu o svojich svadobných tlačovinách? Poďme ju spolu premeniť na skutočnosť.</p>
+            <h1>Malé projekty <br />s veľkým významom</h1>
+            <p className="panel-description">Máte predstavu o svojich svadobných tlačovinách? <br />Poďme ju spolu premeniť na skutočnosť.</p>
             <div className="hero-buttons">
               <Link href="/products" className="button button-primary">
                 Preskúmajte kolekcie
@@ -85,7 +85,7 @@ export default function HomePage() {
             <span className="eyebrow">Recenzie</span>
             <h2 id="reviews-title">Vaše milé slová</h2>
           </div>
-          <p className="subtitle">Všetky tieto recenzie nájdete na mojom facebookovom profile a budem rada ak tam pripudnú aj vaše spokojné slová.</p>
+          <p className="subtitle">Všetky tieto recenzie nájdete na mojom facebookovom profile a budem rada ak tam pribudnú aj vaše spokojné slová.</p>
 
           <div className="reviews-composition">
             {reviews.map((review, index) => (

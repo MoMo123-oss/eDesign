@@ -44,7 +44,7 @@ export default function SiteHeader() {
         </div>
 
         <button
-          className="hamburger"
+          className={open ? 'hamburger open' : 'hamburger'}
           onClick={() => setOpen((state) => !state)}
           aria-label="Toggle navigation"
           aria-expanded={open}
@@ -54,8 +54,8 @@ export default function SiteHeader() {
           <span />
         </button>
 
-        <nav className={open ? 'nav-menu open' : 'nav-menu'}>
-          <div className="nav-mobile-group">
+        <nav className={open ? 'nav-menu open' : 'nav-menu'} onClick={() => setOpen(false)}>
+          <div className="nav-mobile-group" onClick={(event) => event.stopPropagation()}>
             {leftLinks.concat(rightLinks).map((item) => (
               <Link key={item.href} href={item.href} className="nav-item" onClick={() => setOpen(false)}>
                 {item.label}

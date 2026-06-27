@@ -42,7 +42,7 @@ export default function ProductsPage() {
             <span className="eyebrow">produkty</span>
             <h1>Objavte každý detail</h1>
           </div>
-        <p className="subtitle">Svadobné tlačoviny dotvárajú prvý dojem z vášho veľkého dňa a prepájajú všetky jeho časti do jedného krásneho celku. Od oznámení až po menovky, každý detail nesie váš príbeh a štýl.</p>
+        <p className="subtitle">Svadobné tlačoviny dotvárajú prvý dojem z vášho veľkého dňa a prepájajú všetky jeho časti do jedného krásneho celku. Od oznámení až po menovky, každý detail nesie váš príbeh a štýl.</p>
         </div>
       </section>
 

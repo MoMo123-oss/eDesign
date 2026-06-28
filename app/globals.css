@@ -1111,6 +1111,8 @@ button {
   .approach-grid,
   .footer-grid {
     grid-template-columns: 1fr;
+    justify-items: center;
+    display: grid;
   }
 
   .footer-grid img {
@@ -1349,6 +1351,7 @@ button {
   .approach-grid,
   .footer-grid {
     grid-template-columns: 1fr;
+    justify-items: center;
   }
 
   .footer-grid img {
@@ -1363,7 +1366,7 @@ button {
   .footer-grid div h4 {
     justify-self: center;
   }
-  
+
   h1 {
     font-size: clamp(2.1rem, 9vw, 2.8rem);
   }

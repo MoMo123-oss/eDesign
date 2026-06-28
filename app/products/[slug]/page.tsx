@@ -29,9 +29,8 @@ export default function ProductDetailPage({ params }: PageProps) {
       <section className="section hero section-sm">
         <div className="main-container detail-hero">
           <div>
-            <span className="eyebrow">{product.title}</span>
+            <span className="eyebrow">PRODUKT</span>
             <h1>{product.title}</h1>
-            <p className="subtitle">{product.short}</p>
             <p>{product.description}</p>
             <div className="detail-features">
               {product.features.map((feature) => (
@@ -41,9 +40,6 @@ export default function ProductDetailPage({ params }: PageProps) {
               ))}
             </div>
           </div>
-          <div className="detail-hero-image">
-            <img src={product.heroImage} alt={product.title} className="detail-image" />
-          </div>
         </div>
       </section>
 
@@ -51,7 +47,7 @@ export default function ProductDetailPage({ params }: PageProps) {
         <div className="main-container">
           <div className="section-headline">
             <span className="eyebrow">portfólio</span>
-            <h2>Príklady pre {product.title}</h2>
+            <h2>Ukážky</h2>
           </div>
           <PortfolioGrid images={product.images} />
         </div>

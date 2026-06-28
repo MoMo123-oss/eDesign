@@ -50,7 +50,7 @@ export default function PricingPage() {
           <div className="card pricing-card">
             <h3>Rekvizity</h3>
             <p>Balenie 20ks</p>
-            <p className="price-detail" style={{ marginTop: '0.5rem' }}>Od 10,00€ / ks</p>
+            <p className="price-detail" style={{ marginTop: '0.5rem' }}>Od 10,00€ / balenie 20ks</p>
           </div>
           <div className="card pricing-card">
             <h3>Doplnkové tlačoviny</h3>

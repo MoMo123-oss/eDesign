@@ -1345,6 +1345,25 @@ button {
 }
 
 @media (max-width: 640px) {
+  .hero-grid,
+  .approach-grid,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid img {
+    width: 80%;
+    justify-self: center;
+  }
+
+  .footer-grid div p {
+    justify-self: center;
+  }
+
+  .footer-grid div h4 {
+    justify-self: center;
+  }
+  
   h1 {
     font-size: clamp(2.1rem, 9vw, 2.8rem);
   }

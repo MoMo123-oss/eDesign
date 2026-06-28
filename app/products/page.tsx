@@ -8,6 +8,7 @@ import { products, resolveProductImageSrc } from '../../lib/products';
 
 export default function ProductsPage() {
   const [activeSlides, setActiveSlides] = useState<number[]>(() => products.map(() => 0));
+  const [autoSlideResetKey, setAutoSlideResetKey] = useState(0);
 
   useEffect(() => {
     const interval = window.setInterval(() => {
@@ -20,7 +21,7 @@ export default function ProductsPage() {
     }, 5000);
 
     return () => window.clearInterval(interval);
-  }, []);
+  }, [autoSlideResetKey]);
 
   const moveSlide = (productIndex: number, direction: 1 | -1) => {
     setActiveSlides((current) =>
@@ -30,6 +31,9 @@ export default function ProductsPage() {
         return (value + direction + count) % count;
       })
     );
+
+    // Restart auto-slide countdown after any manual navigation.
+    setAutoSlideResetKey((value) => value + 1);
   };
 
   return (

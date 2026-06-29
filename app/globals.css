@@ -695,8 +695,8 @@ button {
 }
 
 .button-secondary {
-  background: #1b2a4d27;
-  color: #1b2a4dcb;
+  background: #1b2a4dcb;
+  color: #f1f1f1;
   border-color: transparent;
 }
 
@@ -1000,8 +1000,8 @@ button {
 }
 
 .feature-pill {
-  background: #1b2a4dcb;
-  color: #f1f1f1;
+  background: #1b2a4d27;
+  color: black;
   border-radius: 999px;
   padding: 0.75rem 1rem;
   font-size: 0.95rem;
@@ -1010,7 +1010,44 @@ button {
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
+  gap: 1.1rem;
+  width: min(1060px, 100%);
+  margin: 0 auto;
+}
+
+.portfolio-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.92);
+  color: #1b2a4d;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: 0 8px 24px rgba(27, 42, 77, 0.15);
+}
+
+.portfolio-arrow-left {
+  left: 0.1rem;
+}
+
+.portfolio-arrow-right {
+  right: 0.1rem;
 }
 
 .portfolio-card {
@@ -1018,13 +1055,95 @@ button {
   border: 1px solid var(--border);
   border-radius: 24px;
   overflow: hidden;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(27, 42, 77, 0.14);
 }
 
 .portfolio-card img {
   width: 100%;
-  height: 260px;
+  height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.portfolio-lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(12, 17, 28, 0.78);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  z-index: 80;
+}
+
+.portfolio-lightbox-image {
+  width: min(1100px, 100%);
+  max-height: calc(100vh - 5rem);
+  object-fit: contain;
+  border-radius: 20px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.45);
+}
+
+.portfolio-lightbox-close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+@media (max-width: 1024px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: min(740px, 100%);
+  }
+
+  .portfolio-arrow-left {
+    left: 0;
+  }
+
+  .portfolio-arrow-right {
+    right: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+    width: min(420px, 100%);
+  }
+
+  .portfolio-card img {
+    height: 100%;
+  }
+
+  .portfolio-arrow {
+    width: 2.4rem;
+    height: 2.4rem;
+    font-size: 1.7rem;
+  }
+
+  .portfolio-arrow-left {
+    left: 0.2rem;
+  }
+
+  .portfolio-arrow-right {
+    right: 0.2rem;
+  }
 }
 
 .pricing-grid-large { 

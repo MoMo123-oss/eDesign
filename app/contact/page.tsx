@@ -30,7 +30,7 @@ export default function ContactPage() {
             </div>
             <div>
               <p className="contact-label">Email</p>
-              <p>e.dizajn21@gmail.com</p>
+              <p><a href="mailto:e.dizajn21@gmail.com">e.dizajn21@gmail.com</a></p>
             </div>
           </div>
           <p className="contact-note">Pre efektívnejšiu odpoveď uveďte o aký typ tlačovín máte záujem a dátum udalosti.</p>

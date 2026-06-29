@@ -51,7 +51,7 @@ export default function HomePage() {
         <div className="main-container hero-grid">
           <div className="hero-copy">
             <h1>Malé projekty <br />s veľkým významom</h1>
-            <p className="panel-description">Máte predstavu o svojich svadobných tlačovinách? <br />Poďme ju spolu premeniť na skutočnosť.</p>
+            <p className="panel-description">Máte predstavu o svojich svadobných tlačovinách? Poďme ju spolu premeniť na skutočnosť.</p>
             <div className="hero-buttons">
               <Link href="/products" className="button button-primary">
                 Preskúmajte kolekcie
